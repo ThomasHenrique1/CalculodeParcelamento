@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Parcelas</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Parcelas</h1>
+        <form>
+            <label for="txtvalor">Valor da compra:</label>
+            <input type="text" id="txtvalor" placeholder="Digite o valor"><br>
+            
+            <label for="txtparcelas">Parcelas:</label>
+            <select id="txtparcelas">
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+                <option value="6">6x</option>
+                <option value="8">8x</option>
+                <option value="10">10x</option>
+            </select>
+            <br>
+            
+            <label for="txtresult">Valor das Parcelas:</label>
+            <input type="text" id="txtresult" readonly placeholder="Resultado">
+            <br>
+            
+            <input type="button" value="Calcular" id="botao">
+            
+            <!-- Nota sobre os juros -->
+            <p class="nota">
+                <strong>Atenção:</strong> Os valores das parcelas são calculados com base em uma taxa de juros de 3% para 2x e 7% para 4x ou mais.
+            </p>
+        </form>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
